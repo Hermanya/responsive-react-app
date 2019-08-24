@@ -11,7 +11,7 @@ Responsive React App
   <img alt="" src="https://img.shields.io/twitter/follow/hermanhasawish.svg?style=social&label=Follow" />
 </a>
 
-![Demo Recording](./recording.gif)
+![Demo Recording](https://github.com/Hermanya/responsive-react-app/raw/master/recording.gif)
 
 [👉 See the Website](https://hermanya.github.io/responsive-react-app)
 

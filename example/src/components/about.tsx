@@ -13,6 +13,8 @@ function About() {
       </video>
 
       <div css="padding: 32px;">
+        <a href="https://github.com/hermanya/responsive-react-app">GitHub</a>{" "}
+        <a href="https://www.npmjs.com/package/responsive-react-app">NPM</a>
         <h1>Why did I make this?</h1>
         <p>
           As a frontend developer I find it difficult to build trully responsive
