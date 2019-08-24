@@ -2,11 +2,13 @@
   "name": "example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://hermanya.github.io/responsive-react-app",
   "dependencies": {
     "@types/jest": "24.0.18",
     "@types/node": "12.7.2",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
+    "gh-pages": "^2.1.1",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-feather": "^2.0.3",
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build --dotfiles"
   },
   "eslintConfig": {
     "extends": "react-app"
