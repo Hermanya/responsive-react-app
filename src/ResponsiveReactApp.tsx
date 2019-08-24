@@ -17,7 +17,6 @@ const Board = styled.div`
   transition-timing-function: ease-in-out;
 `;
 const Mobile = styled.div`
-  padding: 20px;
   padding-bottom: 54px;
   box-sizing: border-box;
   width: 100vw;

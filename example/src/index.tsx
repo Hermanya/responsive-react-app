@@ -7,6 +7,8 @@ import "./index.css";
 import Usage from "./components/usage";
 import About from "./components/about";
 import Credits from "./components/credits";
+import * as _ from "styled-components/cssprop"; // eslint-disable-line
+
 const App = () => {
   return (
     <ResponsiveReactApp

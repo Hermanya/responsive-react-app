@@ -1,18 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 export const TabBarLink = styled(Link)`
-  border-radius: 2px;
-  font-size: 0.70711rem;
-  flex-shrink: 0;
-  line-height: 1;
   width: 64px;
-  padding: 0.2625rem 0.2625rem 0;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.25rem 0;
   text-decoration: none;
   text-align: center;
-  background: none;
-  border: 0;
   svg {
     display: block;
     height: 32px;
@@ -31,6 +26,12 @@ export const TabBarContainer = styled.div`
   padding-bottom: env(safe-area-inset-bottom);
   backdrop-filter: saturate(180%) blur(2px);
   background-color: rgba(255, 255, 255, 0.7);
+  @media (prefers-color-scheme: dark) {
+    background: rgba(0, 0, 0, 0.3);
+    a {
+      color: #fff;
+    }
+  }
 
   width: 100vw;
   @media screen and (min-width: ${props => props.theme.minimumTabSize * 2}px) {
@@ -48,7 +49,7 @@ export const Active = styled.div`
   display: flex;
   a,
   a:hover {
-    color: #a0a0a0;
+    opacity: 0.5;
   }
 `;
 

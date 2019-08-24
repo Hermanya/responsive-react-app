@@ -1,18 +1,33 @@
-import * as React from 'react';
+import * as React from "react";
+import "styled-components/macro";
 
 const codeExample = `
 import ResponsiveReactApp 
   from 'react-responsive-app';
+import styled
+  from 'styled-components'
 import { Link }
   from 'react-router-dom'
+
+const Page = styled.div\`
+  padding: 32px;
+\`
+
+const Tab = styled(Link)\`
+  text-decoration: none;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+\`
 
 const App = () =>
   <ResponsiveReactApp
     tabs={<>
-      <Link to="/">Page 1</Link>
-      <Link to="/2">Page 2</Link>
-      <Link to="/3">Page 3</Link>
-      <Link to="/4">Page 4</Link>
+      <Tab to="/">Page 1</Tab>
+      <Tab to="/2">Page 2</Tab>
+      <Tab to="/3">Page 3</Tab>
+      <Tab to="/4">Page 4</Tab>
     </>}
     paths={[
       '/', '/2', '/3', '/4'
@@ -27,10 +42,13 @@ const App = () =>
 
 function Usage() {
   return (
-    <div>
+    <div css="padding: 32px;">
       <h2>Usage</h2>
       <p>Install the package:</p>
-      <code>npm install responsive-react-app</code>
+      <code>
+        <strong>npm install responsive-react-app</strong> react react-router-dom
+        styled-components
+      </code>
       <p>Add this code:</p>
       <pre>
         <code>{codeExample}</code>
