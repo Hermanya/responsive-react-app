@@ -57,9 +57,10 @@ const TabBar: React.FC<{
   children: any[];
   compnentsPerScreen: number;
   paths: string[];
-}> = ({ children, compnentsPerScreen, paths }) => {
+  pathname: string;
+}> = ({ children, compnentsPerScreen, paths, pathname }) => {
   const index = Math.min(
-    paths.indexOf(window.location.pathname),
+    paths.indexOf(pathname),
     children.length - compnentsPerScreen
   );
   return (

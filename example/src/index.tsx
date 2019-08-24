@@ -14,21 +14,22 @@ const App = () => {
     <ResponsiveReactApp
       tabs={
         <>
-          <TabBarLink to="/" key="0">
+          <TabBarLink to="/">
             <HelpCircle />
             <span>About</span>
           </TabBarLink>
-          <TabBarLink to="/usage" key="1">
+          <TabBarLink to="/usage">
             <Code />
             <span>Usage</span>
           </TabBarLink>
-          <TabBarLink to="/credits" key="2">
+          <TabBarLink to="/credits">
             <Info />
             <span>Credits</span>
           </TabBarLink>
         </>
       }
       paths={["/", "/usage", "/credits"]}
+      routerProps={{ basename: process.env.PUBLIC_URL }}
     >
       <About />
       <Usage />

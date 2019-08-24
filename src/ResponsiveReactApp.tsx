@@ -41,7 +41,8 @@ const ResponsiveReactApp: React.FC<{
   tabs: any;
   paths: string[];
   minimumTabSize?: number;
-}> = ({ children, tabs, minimumTabSize = 320, paths }) => {
+  routerProps?: any;
+}> = ({ children, tabs, minimumTabSize = 320, paths, routerProps = {} }) => {
   const size = useWindowSize();
   const compnentsPerScreen = (size.width / minimumTabSize) | 0;
   const childSize = size.width / compnentsPerScreen;
@@ -51,14 +52,14 @@ const ResponsiveReactApp: React.FC<{
         minimumTabSize
       }}
     >
-      <Router>
+      <Router {...routerProps}>
         <ViewPort>
           <Switch>
             {children.map((_, index) => (
               <Route
                 exact
                 path={`${paths[index] || index || ""}`}
-                render={() => (
+                render={({ location }) => (
                   <>
                     <Board
                       style={{
@@ -77,6 +78,7 @@ const ResponsiveReactApp: React.FC<{
                       <TabBar
                         compnentsPerScreen={compnentsPerScreen}
                         paths={paths}
+                        pathname={location.pathname}
                       >
                         {tabs.props.children.slice(0)}
                       </TabBar>

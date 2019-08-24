@@ -5,7 +5,10 @@ function About() {
   return (
     <div>
       <video width="100%" controls autoPlay>
-        <source src="/assets/recording.mov" type="video/mp4"></source>
+        <source
+          src={process.env.PUBLIC_URL + "/assets/recording.mov"}
+          type="video/mp4"
+        ></source>
         Your browser does not support HTML5 video.
       </video>
 
