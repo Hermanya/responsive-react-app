@@ -17,6 +17,8 @@ Responsive React App
 
 [👉 Basic demo on CodeSendbox](https://codesandbox.io/s/bold-noether-fybj1)
 
+[👉 See another website that's using this lib](https://starikov.dev)
+
 ## Features
 
 - Lightweight
