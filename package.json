@@ -50,7 +50,7 @@
   "dependencies": {
     "abab": "^2.0.0",
     "acorn-globals": "^4.3.3",
-    "acorn": "^6.3.0",
+    "acorn": "^5.7.4",
     "abbrev": "^1.1.1",
     "ajv": "^6.10.2",
     "ajv-errors": "^1.0.1",
