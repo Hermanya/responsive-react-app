@@ -758,7 +758,7 @@
     "y18n": "^4.0.0",
     "yallist": "^3.0.3",
     "yargs": "^13.3.0",
-    "yargs-parser": "^10.1.0"
+    "yargs-parser": "^13.1.2"
   },
   "repository": {
     "type": "git",
