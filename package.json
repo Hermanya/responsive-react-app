@@ -485,7 +485,7 @@
     "nopt": "^4.0.1",
     "normalize-package-data": "^2.5.0",
     "normalize-path": "^3.0.0",
-    "normalize-url": "^1.9.1",
+    "normalize-url": "^4.5.1",
     "npm-bundled": "^1.0.6",
     "npm-packlist": "^1.4.4",
     "npmlog": "^4.1.2",
