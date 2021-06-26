@@ -657,7 +657,7 @@
     "split-string": "^3.1.0",
     "sprintf-js": "^1.0.3",
     "sshpk": "^1.16.1",
-    "ssri": "^6.0.1",
+    "ssri": "^8.0.1",
     "stack-utils": "^1.0.2",
     "static-extend": "^0.1.2",
     "stealthy-require": "^1.1.1",
