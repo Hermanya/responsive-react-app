@@ -477,7 +477,7 @@
     "nice-try": "^1.0.5",
     "no-case": "^2.3.2",
     "node-int64": "^0.4.0",
-    "node-notifier": "^5.4.3",
+    "node-notifier": "^8.0.1",
     "node-modules-regexp": "^1.0.0",
     "node-pre-gyp": "^0.12.0",
     "node-releases": "^1.1.27",
