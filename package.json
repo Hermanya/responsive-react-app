@@ -82,7 +82,7 @@
     "assign-symbols": "^1.0.0",
     "ast-types-flow": "^0.0.7",
     "astral-regex": "^1.0.0",
-    "async": "^2.6.3",
+    "async": "^3.2.2",
     "async-each": "^1.0.3",
     "asynckit": "^0.4.0",
     "async-limiter": "^1.0.1",
